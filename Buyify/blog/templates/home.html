@@ -1,0 +1,71 @@
+{% extends 'layout.html' %}
+
+
+
+{% block content %}
+	{% for user in users %}
+		<style type="text/css" media="screen">
+			.tags {
+			    align-items: center;
+			    display: flex;
+			    flex-wrap: wrap;
+			    justify-content: flex-start;
+			}
+			span {
+			    font-style: inherit;
+			    font-weight: inherit;
+			}
+			.tag:not(body) {
+			    align-items: center;
+			    background-color: #f5f5f5;
+			    border-radius: 4px;
+			    color: #4a4a4a;
+			    display: inline-flex;
+			    font-size: .75rem;
+			    height: 2em;
+			    justify-content: center;
+			    line-height: 1.5;
+			    padding-left: .75em;
+			    padding-right: .75em;
+			    white-space: nowrap;
+			}
+		</style>
+		
+		<article class="media content-section">
+			<!-- <img class='rounded-circle article-img' src="{{ url_for('static', filename='profile_pic/' + user.image_file) }}"> -->
+			<div class="media-body">
+			<div class="article-metadata">
+			 	<a class="mr-2" href="#">{{ user.username }}</a>
+				<small class="text-muted">{{ user.date_created.strftime('%Y-%m-%d') }}</small>
+			</div>
+
+			{% if user.posts %}
+				{% for product in user.posts %}
+				<div class='row'>
+					<div class="col-md-10">
+						<button href='#'class='btn btn-outline-success'style='float: right;'>Add to cart</button>
+						<h2><a class="article-title" href="#">{{ product.title }}</a></h2>
+
+						<h4 class="text-success">Price: ${{product.price}}</h4>
+						<p>{{product.content}}</p>
+						<p>stock left: {{product.stock_amount}}</p>
+					
+						<div class="tags">
+			              <span class="tag">{{product.category}}</span>
+			            </div>
+						
+					
+						
+						<hr>
+
+					</div>
+				</div>
+
+				{% endfor %}
+			{% else %}
+			{% endif %}
+		  </div>
+		</article>
+
+	{% endfor %}
+{% endblock content %}
