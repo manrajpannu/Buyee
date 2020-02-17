@@ -1,7 +1,7 @@
 # Buyify
 lets users create shops and sell products like shopify
 
-## [DEMO]()
+## [DEMO](https://buyify-clone.herokuapp.com/)
 
 
 ## A beginner project using the following stack:
