@@ -14,6 +14,6 @@ soupsieve==1.9.5
 SQLAlchemy==1.3.13
 WTForms==2.2.1
 websocket-client==0.57.0
-Werkzeug==0.15.1
+Werkzeug==0.15.3
 wrapt==1.11.2
 
