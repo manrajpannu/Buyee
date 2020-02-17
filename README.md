@@ -21,6 +21,6 @@ lets users create shops and sell products like shopify
 * Using Bootstrap and HTML/CSS to create User interfaces.
 
 ## Next Steps:
-[ ] Allow users to have a unique domain to host their shop.
-[ ] Allow users to add products into a cart.
-[ ] Give users more customizability with their own shops.
+- [ ] Allow users to have a unique domain to host their shop.
+- [ ] Allow users to add products into a cart.
+- [ ] Give users more customizability with their own shops.
