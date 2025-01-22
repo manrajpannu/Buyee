@@ -1,4 +1,4 @@
-# Buyify
+# Buyee
 lets users create shops and sell products like shopify
 
 ## [DEMO](https://buyify-clone.herokuapp.com/)
